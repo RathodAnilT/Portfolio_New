@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center">
           <div className="relative inline-block w-10 h-10 mr-3">
             <img 
-              src="./src/profile/Anil2-image.png"
+              src="/profile/Anil2-image.png" // Updated path
               alt="Anil Rathod"
               className="w-full h-full rounded-full object-cover border-2 border-gray-300"
             />

@@ -20,7 +20,7 @@ const HeroSection = () => {
               }}
             >
               <img 
-                src="./src/profile/Anil2-image.png"
+                src="/profile/Anil2-image.png" // Updated path
                 alt="Anil Rathod"
                 className="w-full h-full rounded-full object-cover"
               />

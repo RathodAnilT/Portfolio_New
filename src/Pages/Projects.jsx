@@ -1,5 +1,3 @@
-// src/pages/Projects.js
-
 import React, { useState } from 'react';
 import { FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 import Modal from '../components/Modal';
@@ -22,42 +20,42 @@ const Projects = () => {
     {
       title: 'MERN Blog',
       description: 'This project is a user-friendly blog website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a robust platform for creating, managing, and interacting with blog posts.',
-      imageUrl: './src/images/Blog.png',
+      imageUrl: '/images/Blog.png',
       videoUrl: '',
       projectLink: 'https://github.com/RathodAnilT/mern',
     },
     {
       title: 'MovieSphere',
       description: 'The movie app uses The Movie Database (TMDB) API to display Hindi and Hollywood movies, featuring details, posters, ratings, overviews, trailers, search, and pagination.',
-      imageUrl: './src/images/movie.png',
+      imageUrl: '/images/movie.png',
       videoUrl: '/videos/video2.mp4',
       projectLink: 'https://movieorbitbyanil.netlify.app/',
     },
     {
       title: 'WeatherApp',
       description: 'Discover my weather app—real-time updates crafted with HTML, CSS, and JavaScript. Fetching data from an API, it provides accurate weather forecasts to keep you informed on the go.',
-      imageUrl: './src/images/WeatherApp.png',
+      imageUrl: '/images/WeatherApp.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://github.com/RathodAnilT/weatherForecastApp',
     },
     {
       title: 'NetflixClone',
       description: 'This project is a static website created as a clone of Netflix. It is developed using only HTML and CSS, serving as a learning exercise to practice web design and front-end development skills.',
-      imageUrl: './src/images/netflix.png',
+      imageUrl: '/images/netflix.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://github.com/RathodAnilT/NetflixClone',
     },
     {
       title: 'NetflixGPT',
       description: 'This is my ongoing project. Stay tuned for updates!',
-      imageUrl: './src/images/netflix.png',
+      imageUrl: '/images/netflix.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://project-link3.com',
     },
     {
       title: 'For More Projects Please Explore My Github Repository👇',
       description: '',
-      imageUrl: './src/images/hand.png',
+      imageUrl: '/images/hand.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://github.com/RathodAnilT?tab=repositories',
     }

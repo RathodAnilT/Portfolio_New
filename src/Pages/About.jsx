@@ -10,7 +10,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-300 via-purple-400 to-teal-300 rounded-2xl shadow-xl transform -translate-x-4 -translate-y-4"></div>
           <div className="relative z-10">
             <img 
-              src="./src/profile/Anil2-image.png"
+              src="/profile/Anil2-image.png" // Updated path
               alt="Anil Rathod" 
               className="rounded-2xl shadow-lg border-4 border-gray-800 w-48 h-48 md:w-64 md:h-64 object-cover"
             />
