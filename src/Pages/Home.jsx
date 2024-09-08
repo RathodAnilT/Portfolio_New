@@ -2,7 +2,7 @@ import React from 'react';
 import HeroSection from '../components/HeroSection';
 import About from './About';
 import Projects from './Projects';
-import Experience from './Experience';
+import Certification from './Certification';
 import Skills from './Skills';
 import Contact from './Contact';
 
@@ -18,8 +18,8 @@ const Home = () => {
       <section id="projects" className="py-16">
         <Projects />
       </section>
-      <section id="experience" className="py-16">
-        <Experience />
+      <section id="certification" className="py-16">
+        <Certification />
       </section>
       <section id="skills" className="py-16">
         <Skills />

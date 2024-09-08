@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section className="bg-cover bg-center h-screen font-sans" style={{ backgroundImage: 'url(/path/to/your/image.jpg)' }}>
+    <section className="bg-cover bg-center h-screen font-sans" style={{ backgroundImage: 'url(/profile/Hero.png)' }}>
       <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
         <div className="text-center px-3 py-5 max-w-3xl mx-auto">
           <div className="relative inline-block w-48 h-48">

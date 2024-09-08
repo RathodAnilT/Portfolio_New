@@ -54,7 +54,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faProjectDiagram} className="mr-1" /> Projects
           </Link>
           <Link
-            to="experience"
+            to="certification"
             smooth={true}
             duration={500}
             className="flex items-center px-4 py-2 rounded-md bg-gradient-to-r from-red-300 via-pink-400 to-purple-500 text-white border border-transparent hover:border-white hover:cursor-pointer transition-colors"
@@ -62,7 +62,7 @@ const Header = () => {
             spy={true}
             offset={-70}
           >
-            <FontAwesomeIcon icon={faBriefcase} className="mr-1" /> Experience
+            <FontAwesomeIcon icon={faBriefcase} className="mr-1" /> Certification
           </Link>
           <Link
             to="skills"

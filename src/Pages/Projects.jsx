@@ -62,15 +62,23 @@ const Projects = () => {
   ];
 
   return (
-    <section className="container mx-auto p-4 font-sans">
+    <section 
+      className="container mx-auto p-4 font-sans"
+      // style={{ backgroundImage: 'url(/profile/bg2.png)', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
+    >
       <h1 className="text-3xl font-bold mb-8 text-center">My Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 flex flex-col border border-gray-300 bg-opacity-80">
+          <div 
+            key={index} 
+            className="relative bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300 bg-opacity-80 transition-transform transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 flex flex-col"
+            style={{ transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+          >
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-48 object-cover"
+              className="w-full h-48 object-cover transition-transform transform hover:scale-105"
+              style={{ transition: 'transform 0.3s ease' }}
             />
             <div className="p-6 flex flex-col flex-grow bg-black text-white">
               <h2 className="text-xl font-semibold mb-2">{project.title}</h2>

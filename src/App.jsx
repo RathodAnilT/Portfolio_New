@@ -4,7 +4,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Projects from './Pages/Projects';
 import Contact from './Pages/Contact';
-import Experience from './Pages/Experience';
+import Certification from './Pages/Certification';
 import Skills from './Pages/Skills';
 import Footer from './Pages/Footer';
 import Header from './components/Header';
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/certification" element={<Certification />} />
             <Route path="/skills" element={<Skills />} />
           </Routes>
         </main>

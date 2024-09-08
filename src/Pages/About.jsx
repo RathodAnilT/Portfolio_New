@@ -4,7 +4,8 @@ import { SiGeeksforgeeks, SiGithub, SiHackerrank, SiLeetcode, SiLinkedin, SiCode
 
 const About = () => {
   return (
-    <section className="container mx-auto p-4 font-sans flex justify-center items-center min-h-screen">
+    <section className="container mx-auto p-4 font-sans flex justify-center items-center min-h-screen"
+    >
       <div className="flex flex-col md:flex-row items-center">
         <div className="relative mb-8 md:mb-0 md:mr-8">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-300 via-purple-400 to-teal-300 rounded-2xl shadow-xl transform -translate-x-4 -translate-y-4"></div>
