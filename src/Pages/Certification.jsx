@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 
 const Certification = () => {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -9,7 +9,7 @@ const Certification = () => {
       title: "AWS Fundamentals",
       issuer: "Udemy",
       date: "13 Aug 2024",
-      description: "This course covers AWS cloud services, including deploying, managing, and scaling applications. Learn essential AWS services like EC2, S3, and RDS for effective cloud solutions.",
+      description: "This MERN stack blog website offers a robust platform for creating, managing, and interacting with blog posts.",
       content: "/certificates/AWS.pdf",
       logo: "/logos/AWS.png"
     },
@@ -80,42 +80,41 @@ const Certification = () => {
   };
 
   return (
-    <section className="container mx-auto p-6 font-sans bg-black min-h-screen">
+    <section className="container mx-auto px-4 py-8 font-sans bg-black min-h-screen">
       <h1 className="text-4xl font-bold mb-8 text-center text-white">Certifications</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {certificates.map((cert, index) => (
           <motion.div 
             key={index}
-            className="relative flex flex-col bg-black border border-gray-700 cursor-pointer rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-500/50"
-            whileHover={{ scale: 1.05 }} // Dynamic animation using Framer Motion
+            className="relative bg-black border border-gray-700 cursor-pointer rounded-lg overflow-hidden transition-shadow duration-300 hover:shadow-2xl hover:shadow-blue-500/50 flex flex-col"
+            whileHover={{ scale: 1.05 }}
             onClick={() => openModal(cert)}
+            style={{ width: '240px', height: '320px' }} // Set dimensions to match Projects section
           >
             {/* Certificate Logo */}
-            <div className="relative w-full h-40"> {/* Adjusted height */}
+            <div className="relative w-full" style={{ height: '180px' }}>
               <img 
                 src={cert.logo} 
                 alt={`${cert.title} logo`} 
-                className="absolute top-0 left-0 w-full h-full object-cover" // Ensure image covers the container
+                className="absolute top-0 left-0 w-full h-full object-cover"
               />
             </div>
 
-            <div className="p-4 flex-1 bg-black">
-              {/* Completion Badge */}
-              <div className="absolute top-2 left-2 z-10 w-8 h-8 bg-green-600 text-white flex items-center justify-center rounded-full shadow-md">
+            <div className="p-4 flex flex-col flex-grow bg-black text-white"> {/* Adjusted padding */}
+              <div className="absolute top-2 left-2 z-10 w-6 h-6 bg-green-600 text-white flex items-center justify-center rounded-full shadow-md">
                 ✓
               </div>
 
-              <h3 className="text-xl font-semibold text-white mb-2">{cert.title}</h3>
-              <h4 className="text-lg font-medium text-gray-400 mb-2">{cert.issuer}</h4>
-              <p className="text-gray-500 mb-2">{cert.date}</p>
-              <p className="text-gray-300">{cert.description}</p>
+              <h3 className="text-lg font-semibold mb-2">{cert.title}</h3>
+              <h4 className="text-md font-medium text-gray-400 mb-1">{cert.issuer}</h4>
+              <p className="text-xs text-gray-500 mb-2">{cert.date}</p>
+              <p className="text-xs text-gray-300 flex-grow">{cert.description}</p> {/* Adjusted text size and spacing */}
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* Modal */}
       {selectedCert && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg p-8 relative max-w-lg w-full">

@@ -19,7 +19,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'MERN Blog',
-      description: 'This project is a user-friendly blog website built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a robust platform for creating, managing, and interacting with blog posts.',
+      description: 'This MERN stack blog website offers a robust platform for creating, managing, and interacting with blog posts.',
       imageUrl: '/images/Blog.png',
       videoUrl: '',
       projectLink: 'https://github.com/RathodAnilT/mern',
@@ -33,7 +33,7 @@ const Projects = () => {
     },
     {
       title: 'WeatherApp',
-      description: 'Discover my weather app—real-time updates crafted with HTML, CSS, and JavaScript. Fetching data from an API, it provides accurate weather forecasts to keep you informed on the go.',
+      description: 'Discover my weather app—real-time updates crafted with HTML, CSS, and JavaScript.',
       imageUrl: '/images/WeatherApp.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://github.com/RathodAnilT/weatherForecastApp',
@@ -58,37 +58,33 @@ const Projects = () => {
       imageUrl: '/images/hand.png',
       videoUrl: '/videos/video3.mp4',
       projectLink: 'https://github.com/RathodAnilT?tab=repositories',
-    }
+    },
   ];
 
   return (
-    <section 
-      className="container mx-auto p-4 font-sans"
-      // style={{ backgroundImage: 'url(/profile/bg2.png)', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
-    >
+    <section className="container mx-auto px-4 py-8 font-sans">
       <h1 className="text-3xl font-bold mb-8 text-center">My Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {projects.map((project, index) => (
           <div 
-            key={index} 
+            key={index}
             className="relative bg-white rounded-lg shadow-lg overflow-hidden border border-gray-300 bg-opacity-80 transition-transform transform hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50 flex flex-col"
-            style={{ transition: 'transform 0.3s ease, box-shadow 0.3s ease' }}
+            style={{ width: '240px', height: '320px' }} // Consistent dimensions
           >
             <img
               src={project.imageUrl}
               alt={project.title}
-              className="w-full h-48 object-cover transition-transform transform hover:scale-105"
-              style={{ transition: 'transform 0.3s ease' }}
+              className="w-full h-40 object-cover"
             />
-            <div className="p-6 flex flex-col flex-grow bg-black text-white">
-              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="mb-4 flex-grow">{project.description}</p>
+            <div className="p-4 flex flex-col flex-grow bg-black text-white">
+              <h2 className="text-lg font-semibold mb-2">{project.title}</h2>
+              <p className="flex-grow text-sm">{project.description}</p>
               <div className="flex justify-between items-center mt-auto">
                 <button
                   onClick={() => openModal(project.videoUrl)}
                   className="text-blue-500 hover:text-blue-700"
                 >
-                  <FaPlay className="text-2xl" />
+                  <FaPlay className="text-xl" />
                 </button>
                 <a
                   href={project.projectLink}
@@ -96,7 +92,7 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:text-blue-700"
                 >
-                  <FaExternalLinkAlt className="text-2xl" />
+                  <FaExternalLinkAlt className="text-xl" />
                 </a>
               </div>
             </div>
