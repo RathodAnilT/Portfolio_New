@@ -1,5 +1,5 @@
 ## Hello There !!
-## Welcome to MY Porfolio
+## Welcome to MY Portfolio
 
 # React + Vite
 
