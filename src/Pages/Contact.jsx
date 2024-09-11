@@ -73,22 +73,34 @@ const Contact = () => {
     <section className="container mx-auto p-4 font-sans text-white">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold mb-4">Get In Touch</h1>
-        <p className="text-xl mb-8">I'd love to hear from you! Feel free to reach out with any questions or inquiries.</p>
+        <p className="text-xl mb-8">Thank you for checking out my portfolio. If you have any queries, drop your message below.</p>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6">
+      <div className="flex flex-col md:flex-row justify-center items-start space-y-6 md:space-y-0 md:space-x-6">
         {/* Information Section */}
-        <div className="md:w-1/2 flex flex-col items-start space-y-4 p-4 max-w-xs">
+        <div className="md:w-1/2 flex flex-col items-start p-4 max-w-xs">
+          {/* Name Section */}
           <div className="flex items-center space-x-3">
             <FaUser className="text-2xl text-gray-400" />
-            <p className="text-lg text-gray-300">Anil Rathod</p>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-300">Name</h2>
+              <p className="text-lg text-gray-300">Anil Rathod</p>
+            </div>
           </div>
-          <div className="flex items-center space-x-3">
-            <FaEnvelope className="text-2xl text-gray-400" />
-            <p className="text-lg text-gray-300">anilrathod.150198@gmail.com</p>
-          </div>
-          <div className="flex items-center space-x-3">
+          {/* Address Section */}
+          <div className="flex items-center space-x-3 mt-4">
             <FaMapMarkerAlt className="text-2xl text-gray-400" />
-            <p className="text-lg text-gray-300">At Post Pune, Maharashtra</p>
+            <div>
+              <h2 className="text-lg font-semibold text-gray-300">Address</h2>
+              <p className="text-lg text-gray-300">At Post Pune, Maharashtra</p>
+            </div>
+          </div>
+          {/* Email Section */}
+          <div className="flex items-center space-x-3 mt-4">
+            <FaEnvelope className="text-2xl text-gray-400" />
+            <div>
+              <h2 className="text-lg font-semibold text-gray-300">Email</h2>
+              <p className="text-lg text-gray-300">anilrathod.150198@gmail.com</p>
+            </div>
           </div>
         </div>
         {/* Form Section */}
@@ -236,6 +248,6 @@ const Contact = () => {
       </style>
     </section>
   );
-}
+};
 
 export default Contact;
